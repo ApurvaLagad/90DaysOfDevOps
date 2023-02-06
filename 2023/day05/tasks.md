@@ -8,7 +8,7 @@ All 90 directories within seconds using a simple command.
 
 ### Tasks 
 1) You have to do the same using Shell Script i.e using either Loops or command with start day and end day variables using arguments -
-
+Ans=./createDirectories.sh day 1 90
  So Write a bash script createDirectories.sh that when the script is executed with three given arguments (one is directory name and second is start number of directories and third is the end number of directories ) it creates specified number of directories with a dynamic directory name.
 
 Example 1: When the script is executed as
@@ -33,6 +33,21 @@ You may need to use loops or commands (or both), based on your preference . [Che
  Watch [this video](https://youtu.be/aolKiws4Joc) 
  
  In case of Doubts, post it in [Discord Channel for #90DaysOfDevOps](https://discord.gg/hs3Pmc5F)
+ Ans = create directory for backups
+mkdir /backups
+
+copy contents of user1
+cp -a /home/user1/* /backups/
+
+copy contents of user2
+cp -a /home/user2/* /backups/
+
+compress the backup directory
+tar -czvf /backups.tar.gz /backups
+
+delete the backup directory
+rm -rf /backups
+
 
 
  3) Read About Cron and Crontab, to automate the backup Script
@@ -48,6 +63,14 @@ A user is an entity, in a Linux operating system, that can manipulate files and 
 
 
  5) Create 2 users and just display their Usernames
+ Ans = #create 2 user 
+useradd -m user1
+useradd -m user2
+
+#display usernames
+echo"Usernames:"
+echo "user1"
+echo "user2"
 
 [Check out this reference: https://www.geeksforgeeks.org/user-management-in-linux/](https://www.geeksforgeeks.org/user-management-in-linux/)
 
