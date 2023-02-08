@@ -21,6 +21,26 @@
  1) You have to install docker and jenkins in your system from your terminal using package managers
 
  2) Write a small blog or article to install these tools using package managers on Ubuntu and CentOS
+ 
+install docker on ubuntu
+1. open terminal
+2.first update the linux package :sudo apt update
+3.get installation link of docker on ubuntu  from official docker website:
+4.run the script
+5.thats it docker is installed
+6.to check version :docker --version
+
+install docker cent os
+1. first  check hardware configuration of the system :lscpu
+2.check the operating system details: cat /etc/*release*
+3.check for system updated:sudo dnf check-update
+now set up the docker repo, this is done by adding the repo to the system resources list
+3. sudo dnf config-manager --add-repo= link to download docker repository from official docker website
+4. once docker repo is added install latest available version of docker on cent os:  sudo dnf install docker-ce --nobest --allowerasing -y
+5.now docker is successfully installed ,we need to start docker daemon:sudo systemctl start docker
+6.if failing ,retry until you get no output
+7.check if daemon is started: sudo systemctl status docker
+8.to start daemon automatically:sudo systemctl enable docker
 
 
 ### systemctl and systemd
